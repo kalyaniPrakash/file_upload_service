@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hello returns a demo response 1`] = `
+Object {
+  "body": "{
+  \\"message\\": \\"Go Serverless v1.0! Your function executed successfully!\\"
+}",
+  "statusCode": 200,
+}
+`;

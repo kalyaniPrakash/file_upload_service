@@ -1,0 +1,12 @@
+  module.exports = {
+  tables: [
+    {
+      TableName: 'Policy_Renewal_Details',
+      KeySchema: [{AttributeName: 'ExistingPolicyNumber', KeyType: 'HASH'}],
+      AttributeDefinitions: [{AttributeName: 'ExistingPolicyNumber', AttributeType: 'S'}],
+      ProvisionedThroughput: {ReadCapacityUnits: 1, WriteCapacityUnits: 1}
+    }
+  ],
+  port: 8000,
+  options: ['-sharedDb']
+};

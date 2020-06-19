@@ -1,0 +1,112 @@
+[
+  {
+    "ExistingPolicyNumber": "SDPHG19000901T",
+    "RenewalPolicyNumber": "SDPHG200000720T",
+    "Insured": "Annie Huei Ngan",
+    "Email": "ngsheauwen@gmail.com",
+    "PostalAddress": "36A & B, Tower 1, Phase 1, Residence Bel-Air, HK",
+    "RenewalDiscount": "35%",
+    "DiscountedPremium": "HK$1,202.70",
+    "ExpiryDate": "15/5/2020",
+    "EligibleForRenewal": "true"
+  },
+  {
+    "ExistingPolicyNumber": "SDPHG19000902T",
+    "RenewalPolicyNumber": "SDPHG200000721T",
+    "Insured": "Annie Huei Ngan",
+    "Email": "ngsheauwen@gmail.com",
+    "PostalAddress": "36A & B, Tower 1, Phase 1, Residence Bel-Air, HK",
+    "RenewalDiscount": "35%",
+    "DiscountedPremium": "HK$1,302.00",
+    "ExpiryDate": "16/5/2020",
+    "EligibleForRenewal": "false"
+  },
+  {
+    "ExistingPolicyNumber": "SDPHG19000903T",
+    "RenewalPolicyNumber": "SDPHG200000722T",
+    "Insured": "Annie Huei Ngan",
+    "Email": "kalyani.webdeveloper@gmail.com",
+    "PostalAddress": "36A & B, Tower 1, Phase 1, Residence Bel-Air, HK",
+    "RenewalDiscount": "40%",
+    "DiscountedPremium": "HK$1,500.72",
+    "ExpiryDate": "17/5/2020",
+    "EligibleForRenewal": "false"
+  },
+  {
+    "ExistingPolicyNumber": "SDPHG19000904T",
+    "RenewalPolicyNumber": "SDPHG200000723T",
+    "Insured": "Annie Huei Ngan",
+    "Email": "ngsheauwen@gmail.com",
+    "PostalAddress": "36A & B, Tower 1, Phase 1, Residence Bel-Air, HK",
+    "RenewalDiscount": "35%",
+    "DiscountedPremium": "HK$1,202.70",
+    "ExpiryDate": "15/5/2020",
+    "EligibleForRenewal": "false"
+  },
+  {
+    "ExistingPolicyNumber": "SDPHG19000905T",
+    "RenewalPolicyNumber": "SDPHG200000724T",
+    "Insured": "Annie Huei Ngan",
+    "Email": "kalyani.rompicherla@gmail.com",
+    "PostalAddress": "36A & B, Tower 1, Phase 1, Residence Bel-Air, HK",
+    "RenewalDiscount": "35%",
+    "DiscountedPremium": "HK$1,302.00",
+    "ExpiryDate": "16/5/2020",
+    "EligibleForRenewal": "true"
+  },
+  {
+    "ExistingPolicyNumber": "SDPHG19000906T",
+    "RenewalPolicyNumber": "SDPHG200000725T",
+    "Insured": "Annie Huei Ngan",
+    "Email": "kalyani.rompicherla@gmail.com",
+    "PostalAddress": "36A & B, Tower 1, Phase 1, Residence Bel-Air, HK",
+    "RenewalDiscount": "40%",
+    "DiscountedPremium": "HK$1,500.72",
+    "ExpiryDate": "17/5/2020",
+    "EligibleForRenewal": "true"
+  },
+  {
+    "ExistingPolicyNumber": "SDPHG19000907T",
+    "RenewalPolicyNumber": "SDPHG200000726T",
+    "Insured": "Annie Huei Ngan",
+    "Email": "kalyani.webdeveloper@gmail.com",
+    "PostalAddress": "36A & B, Tower 1, Phase 1, Residence Bel-Air, HK",
+    "RenewalDiscount": "20%",
+    "DiscountedPremium": "HK$798.73",
+    "ExpiryDate": "18/5/2020",
+    "EligibleForRenewal": "false"
+  },
+  {
+    "ExistingPolicyNumber": "SDPHG19000908T",
+    "RenewalPolicyNumber": "SDPHG200000727T",
+    "Insured": "Annie Huei Ngan",
+    "Email": "kalyani.webdeveloper@gmail.com",
+    "PostalAddress": "36A & B, Tower 1, Phase 1, Residence Bel-Air, HK",
+    "RenewalDiscount": "15%",
+    "DiscountedPremium": "HK$1,300.55",
+    "ExpiryDate": "19/5/2020",
+    "EligibleForRenewal": "false"
+  },
+  {
+    "ExistingPolicyNumber": "SDPHG19000909T",
+    "RenewalPolicyNumber": "SDPHG200000728T",
+    "Insured": "Annie Huei Ngan",
+    "Email": "kalyani.webdeveloper@gmail.com",
+    "PostalAddress": "36A & B, Tower 1, Phase 1, Residence Bel-Air, HK",
+    "RenewalDiscount": "35%",
+    "DiscountedPremium": "HK$1,202.75",
+    "ExpiryDate": "20/5/2020",
+    "EligibleForRenewal": "true"
+  },
+  {
+    "ExistingPolicyNumber": "SDPHG19000910T",
+    "RenewalPolicyNumber": "SDPHG200000729T",
+    "Insured": "Annie Huei Ngan",
+    "Email": "ngsheauwen@gmail.com",
+    "PostalAddress": "36A & B, Tower 1, Phase 1, Residence Bel-Air, HK",
+    "RenewalDiscount": "30%",
+    "DiscountedPremium": "HK$2,100.76",
+    "ExpiryDate": "21/5/2020",
+    "EligibleForRenewal": "true"
+  }
+]

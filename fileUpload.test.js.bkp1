@@ -1,0 +1,50 @@
+const { DocumentClient } = require("aws-sdk/clients/dynamodb");
+describe("file upload", () => {
+  beforeEach(() => {
+    jest.setTimeout(10000);
+  });
+  const ddb = new DocumentClient({
+    convertEmptyValues: true,
+    endpoint: "http://localhost:8000",
+    sslEnabled: false,
+    region: "local",
+  });
+
+  test("should insert item into table", async () => {
+    await ddb
+      .put({
+        TableName: "Policy_Renewal_Details",
+        Item: {
+          DateAdded: new Date().toISOString(),
+          ExistingPolicyNumber: "SDPHG19000901T",
+          RenewalPolicyNumber: "SDPHG200000720T",
+          Insured: "Annie Huei Ngan",
+          Email: "ngsheauwen@gmail.com",
+          PostalAddress: "36A & B, Tower 1, Phase 1, Residence Bel-Air, HK",
+          RenewalDiscount: "35%",
+          DiscountedPremium: "HK$1,202.70",
+          ExpiryDate: "15/5/2020",
+        },
+      })
+      .promise();
+
+    const { Item } = await ddb
+      .get({
+        TableName: "Policy_Renewal_Details",
+        Key: { ExistingPolicyNumber: "SDPHG19000901T" },
+      })
+      .promise();
+
+    expect(Item).toEqual({
+      DateAdded: new Date().toISOString(),
+      ExistingPolicyNumber: "SDPHG19000901T",
+      RenewalPolicyNumber: "SDPHG200000720T",
+      Insured: "Annie Huei Ngan",
+      Email: "ngsheauwen@gmail.com",
+      PostalAddress: "36A & B, Tower 1, Phase 1, Residence Bel-Air, HK",
+      RenewalDiscount: "35%",
+      DiscountedPremium: "HK$1,202.70",
+      ExpiryDate: "15/5/2020",
+    });
+  });
+});

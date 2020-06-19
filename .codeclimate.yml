@@ -1,0 +1,21 @@
+version: "2"
+plugins:
+  eslint:
+    enabled: true
+    config:
+      extensions:
+        - .es6
+        - .jsx
+exclude_patterns:
+  - "config/"
+  - "coverage/"
+  - "db/"
+  - "dist/"
+  - "features/"
+  - "**/node_modules/"
+  - "script/"
+  - "**/spec/"
+  - "**/test/"
+  - "**/tests/"
+  - "**/vendor/"
+  - "**/codeclimate-master/"

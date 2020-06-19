@@ -1,0 +1,77 @@
+const dbConfig = require("../database/DynamoDBConfig");
+
+var params = {
+  TableName: "Policy_Renewal_Details",
+};
+
+const userPolicies = {};
+
+getUserPoliciesList1 = (email) => {
+  console.log("connecting to db");
+  dbConfig.dbClient.scan(params, function (err, data) {
+    console.log("fetching data");
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("The Scan call evaluated " + data.ScannedCount + " items");
+      return data;
+    }
+  });
+  //   return policiesList;
+};
+
+getUserPoliciesList = (email, mycallback) => {
+  console.log("connecting to db");
+  dbConfig.dbClient.scan(params, mycallback);
+  //   return policiesList;
+};
+
+mycallback1 = (err, data) => {
+  console.log("fetching data");
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("The Scan call evaluated " + data.ScannedCount + " items");
+    return data;
+  }
+};
+
+apiFunctionWrapper = (email) => {
+  return new Promise((resolve, reject) => {
+    getUserPoliciesList(email, (err, data) => {
+      resolve(data);
+    });
+  });
+};
+
+businessLogic = async (email) => {
+  try {
+    // return await apiFunctionWrapper(email);
+    const result = await apiFunctionWrapper(email);
+    console.log("resutl in aync");
+    // console.log(result);
+    return result;
+  } catch (error) {
+    console.error("ERROR:" + error);
+  }
+};
+
+callingFunction = async (email) => {
+  console.log("inside final aync await start");
+  console.log(await businessLogic(email));
+  console.log("inside final aync await end");
+  //   businessLogic(email)
+  //     .then(function () {
+  //       console.log("Promise Resolved");
+  //     })
+  //     .catch(function () {
+  //       console.log("Promise Rejected");
+  //     });
+};
+
+userPolicies.getUserPoliciesList = getUserPoliciesList;
+userPolicies.businessLogic = businessLogic;
+userPolicies.callingFunction = callingFunction;
+
+// module.exports = getUserPoliciesList;
+module.exports = userPolicies;
