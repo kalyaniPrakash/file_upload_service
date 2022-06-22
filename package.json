@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@shelf/jest-dynamodb": "^1.7.0",
-    "async": "^3.2.0",
+    "async": "^3.2.2",
     "aws-sdk": "^2.681.0",
     "aws-sdk-mock": "^5.1.0",
     "cors": "^2.8.5",
